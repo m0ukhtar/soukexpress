@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>soukExpress - Achetez global, payez local</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+<!-- Barre de navigation premium -->
+<header class="sticky">
+    <div class="logo">
+        <span class="logo-icon"><i class="fas fa-shopping-bag"></i></span>
+        <h1>souk<span>Express</span></h1>
+    </div>
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
+                <li><a href="produits.html"><i class="fas fa-store"></i> <span>Boutique</span></a></li>
+                <li><a href="abonnements.html"><i class="fas fa-star"></i> <span>Abonnements</span></a></li>
+                <li><a href="mon-compte.html" class="account-icon"><i class="fas fa-user-circle"></i></a></li>
+                <li><a href="contact.html" class="btn-contact"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            
+            <!-- Menu mobile amélioré -->
+            <div class="mobile-bottom-nav">
+                <a href="index.html" class="mobile-nav-item active">
+                    <div class="mobile-nav-icon"><i class="fas fa-home"></i></div>
+                    <span class="mobile-nav-text">Accueil</span>
+                </a>
+                <a href="produits.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-store"></i></div>
+                    <span class="mobile-nav-text">Boutique</span>
+                </a>
+                <a href="abonnements.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-star"></i></div>
+                    <span class="mobile-nav-text">Abonnements</span>
+                </a>
+                <a href="mon-compte.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-user-circle"></i></div>
+                    <span class="mobile-nav-text">Compte</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-envelope"></i></div>
+                    <span class="mobile-nav-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bannière hero avec animation -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Achetez partout dans le monde,<br><span>Payez en FCFA</span></h1>
+        <p class="hero-subtitle">
+            Commandez sur Amazon, AliExpress, Shein…<br>
+            Nous payons pour vous et livrons au Tchad.
+        </p>
+        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+          <a href="produits.html" class="btn-primary">Explorer la boutique</a>
+          <a href="#how-it-works" class="btn-secondary"
+            >Comment ça marche ? <i class="fas fa-arrow-down"></i
+          ></a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section partenaires -->
+    <section class="partners">
+      <p>Partenaires de confiance :</p>
+      <div class="partner-logos">
+        <img src="images/dhl-logo1.png" alt="DHL" />
+        <img src="images/amazon-logo.png" alt="Amazon" />
+        <img src="images/shen-logo.png" alt="Shein" />
+        <img src="images/mama-getzner-logo.png" alt="Getzner" />
+        <img src="images/aliexpress-logo.png" alt="AliExpress" />
+
+      </div>
+    </section>
+
+    <!-- Section "Comment ça marche" -->
+    <section class="how-it-works" id="how-it-works">
+      <h2 class="section-title">Service simple en 3 étapes</h2>
+      <div class="steps-container">
+        <div class="step-card" data-aos="zoom-in">
+          <div class="step-number">1</div>
+          <i class="fas fa-search step-icon"></i>
+          <h3>Trouvez</h3>
+          <p>Collez le lien du produit ou choisissez dans notre catalogue.</p>
+        </div>
+        <div class="step-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="step-number">2</div>
+          <i class="fas fa-money-bill-wave step-icon"></i>
+          <h3>Payez</h3>
+          <p>Mobile Money (Airtel, Moov) ou cash à N'Djamena.</p>
+        </div>
+        <div class="step-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="step-number">3</div>
+          <i class="fas fa-truck step-icon"></i>
+          <h3>Recevez</h3>
+          <p>Livraison express DHL ou retrait en point relais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section produits phares -->
+    <section class="featured-products">
+      <h2 class="section-title">Produits populaires</h2>
+      <div class="products-grid">
+        <div class="product-card" data-aos="flip-left">
+          <!--<div class="product-badge">Top</div>-->
+          <img src="images/iphone-15-pro.jpg" alt="iPhone 15 Pro" />
+          <div class="product-info">
+            <h3>iPhone 15 Pro</h3>
+            <div class="price">850 000 FCFA</div>
+            <a href="#" class="btn-add-to-cart"
+              ><i class="fas fa-cart-plus"></i> Commander</a
+            >
+          </div>
+        </div>
+        <div class="product-card" data-aos="flip-left" data-aos-delay="200">
+          <img src="images/macbook-air.jpg" alt="MacBook Air" />
+          <div class="product-info">
+            <h3>MacBook Air M2</h3>
+            <div class="price">1 100 000 FCFA</div>
+            <a href="#" class="btn-add-to-cart"
+              ><i class="fas fa-cart-plus"></i> Commander</a
+            >
+          </div>
+        </div>
+        <div class="product-card" data-aos="flip-left" data-aos-delay="400">
+          <img src="images/dior-sauvage.jpg" alt="Parfum Dior" />
+          <div class="product-info">
+            <h3>Dior Sauvage</h3>
+            <div class="price">95 000 FCFA</div>
+            <a href="#" class="btn-add-to-cart"
+              ><i class="fas fa-cart-plus"></i> Commander</a
+            >
+          </div>
+        </div>
+        <div class="product-card" data-aos="flip-left" data-aos-delay="200">
+          <img src="images/macbook-air.jpg" alt="MacBook Air" />
+          <div class="product-info">
+            <h3>MacBook Air M2</h3>
+            <div class="price">1 100 000 FCFA</div>
+            <a href="#" class="btn-add-to-cart"
+              ><i class="fas fa-cart-plus"></i> Commander</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section témoignages -->
+    <section class="testimonials">
+      <h2 class="section-title">Ils nous font confiance</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card" data-aos="fade-right">
+          <div class="testimonial-header">
+            <img src="images/client1.jpg" alt="Client" />
+            <div>
+              <h4>Fatime K.</h4>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p>
+            "J'ai reçu mon iPhone en 5 jours seulement ! Service impeccable."
+          </p>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up">
+          <div class="testimonial-header">
+            <img src="images/client2.jpg" alt="Client" />
+            <div>
+              <h4>Mahamat S.</h4>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>"Netflix activé en 1h, je recommande à 100%."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="final-cta">
+      <h2>Prêt à shopper comme jamais ?</h2>
+      <p>Rejoignez +50 clients satisfaits au Tchad.</p>
+      <a href="produits.html" class="btn-primary">Commencer maintenant</a>
+    </section>
+
+    <!-- Pied de page amélioré -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>soukExpress</h3>
+          <p>Votre passerelle d'achats internationaux depuis le Tchad.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="produits.html">Boutique</a></li>
+            <li><a href="abonnements.html">Abonnements</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><i class="fas fa-map-marker-alt"></i> N'Djamena, Tchad</p>
+          <p><i class="fas fa-phone"></i> +235 XX XX XX XX</p>
+          <p><i class="fas fa-envelope"></i> contact@soukexpress.td</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 soukExpress. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts pour animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
