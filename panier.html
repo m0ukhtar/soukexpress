@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panier - soukExpress</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Barre de navigation (identique) -->
+    <header class="sticky">
+        <div class="logo">
+            <span class="logo-icon"><i class="fas fa-shopping-bag"></i></span>
+            <h1>souk<span>Express</span></h1>
+        </div>
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
+                <li><a href="produits.html"><i class="fas fa-store"></i> <span>Boutique</span></a></li>
+                <li><a href="abonnements.html"><i class="fas fa-star"></i> <span>Abonnements</span></a></li>
+                <li><a href="mon-compte.html" class="account-icon"><i class="fas fa-user-circle"></i> <span>Compte</span></a></li>
+                <li><a href="contact.html" class="btn-contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+            
+            <div class="mobile-menu">
+                <a href="index.html" class="active"><i class="fas fa-home"></i></a>
+                <a href="produits.html"><i class="fas fa-store"></i></a>
+                <a href="abonnements.html"><i class="fas fa-star"></i></a>
+                <a href="mon-compte.html"><i class="fas fa-user-circle"></i></a>
+                <a href="contact.html"><i class="fas fa-envelope"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section panier -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-header">
+                <h1><i class="fas fa-shopping-cart"></i> Votre panier</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Panier</span>
+                </div>
+            </div>
+            
+            <div class="cart-grid">
+                <div class="cart-items">
+                    <!-- Article 1 -->
+                    <div class="cart-item">
+                        <div class="product-image">
+                            <img src="images/iphone-15-pro.jpg" alt="iPhone 15 Pro" />
+                        </div>
+                        <div class="product-details">
+                            <h3>iPhone 15 Pro 256GB</h3>
+                            <div class="product-meta">
+                                <span>Couleur: Or</span>
+                                <span>Stock: Disponible</span>
+                            </div>
+                            <button class="remove-item"><i class="fas fa-trash"></i> Supprimer</button>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">850 000 FCFA</span>
+                            <span class="original-price">1 000 000 FCFA</span>
+                        </div>
+                        <div class="product-quantity">
+                            <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" />
+                            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="product-subtotal">
+                            <span>850 000 FCFA</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Article 2 -->
+                    <div class="cart-item">
+                        <div class="product-image">
+                            <img src="images/macbook-air.jpg" alt="MacBook Air" />
+                        </div>
+                        <div class="product-details">
+                            <h3>MacBook Air M2 2023</h3>
+                            <div class="product-meta">
+                                <span>Couleur: Gris sidéral</span>
+                                <span>Stock: Disponible</span>
+                            </div>
+                            <button class="remove-item"><i class="fas fa-trash"></i> Supprimer</button>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">1 100 000 FCFA</span>
+                        </div>
+                        <div class="product-quantity">
+                            <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" />
+                            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="product-subtotal">
+                            <span>1 100 000 FCFA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Résumé de la commande</h3>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Sous-total</span>
+                            <span>1 950 000 FCFA</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Livraison</span>
+                            <span>25 000 FCFA</span>
+                        </div>
+                        <div class="summary-row discount">
+                            <span>Réduction</span>
+                            <span>-150 000 FCFA</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>1 825 000 FCFA</span>
+                        </div>
+                    </div>
+                    <div class="coupon-form">
+                        <input type="text" placeholder="Code promo" />
+                        <button class="btn-apply">Appliquer</button>
+                    </div>
+                    <a href="checkout.html" class="btn-checkout">Passer la commande</a>
+                    <div class="secure-payment">
+                        <i class="fas fa-lock"></i>
+                        <span>Paiement sécurisé</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-recommendations">
+                <h3>Vous pourriez aussi aimer</h3>
+                <div class="products-grid">
+                    <!-- Produits recommandés -->
+                    <!-- ... (structure identique à la boutique) ... -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... -->
+    </footer>
+
+    <script>
+        // Gestion de la quantité
+        document.querySelectorAll('.qty-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const input = this.parentElement.querySelector('input');
+                let value = parseInt(input.value);
+                
+                if (this.classList.contains('minus') && value > 1) {
+                    input.value = value - 1;
+                } else if (this.classList.contains('plus')) {
+                    input.value = value + 1;
+                }
+                
+                // Ici: Mettre à jour le sous-total via AJAX
+            });
+        });
+        
+        // Suppression d'article
+        document.querySelectorAll('.remove-item').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.closest('.cart-item').remove();
+                // Ici: Mettre à jour le panier via AJAX
+            });
+        });
+    </script>
+</body>
+</html>

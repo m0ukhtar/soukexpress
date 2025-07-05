@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Compte - soukExpress</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Barre de navigation -->
+<header class="sticky">
+    <div class="logo">
+        <span class="logo-icon"><i class="fas fa-shopping-bag"></i></span>
+        <h1>souk<span>Express</span></h1>
+    </div>
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
+                <li><a href="produits.html"><i class="fas fa-store"></i> <span>Boutique</span></a></li>
+                <li><a href="abonnements.html"><i class="fas fa-star"></i> <span>Abonnements</span></a></li>
+                <li><a href="mon-compte.html" class="account-icon"><i class="fas fa-user-circle"></i></a></li>
+                <li><a href="contact.html" class="btn-contact"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            
+            <!-- Menu mobile amélioré -->
+            <div class="mobile-bottom-nav">
+                <a href="index.html" class="mobile-nav-item active">
+                    <div class="mobile-nav-icon"><i class="fas fa-home"></i></div>
+                    <span class="mobile-nav-text">Accueil</span>
+                </a>
+                <a href="produits.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-store"></i></div>
+                    <span class="mobile-nav-text">Boutique</span>
+                </a>
+                <a href="abonnements.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-star"></i></div>
+                    <span class="mobile-nav-text">Abonnements</span>
+                </a>
+                <a href="mon-compte.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-user-circle"></i></div>
+                    <span class="mobile-nav-text">Compte</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-envelope"></i></div>
+                    <span class="mobile-nav-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Section compte utilisateur -->
+    <section class="account-section">
+        <div class="container">
+            <div class="account-sidebar">
+                <div class="account-profile">
+                    <div class="profile-pic">
+                        <img src="images/user-avatar.jpg" alt="Photo de profil" />
+                        <button class="edit-pic"><i class="fas fa-camera"></i></button>
+                    </div>
+                    <h3>Mohamed Diallo</h3>
+                    <p>Membre depuis: 15/03/2023</p>
+                </div>
+                <nav class="account-menu">
+                    <a href="#infos" class="active"><i class="fas fa-user"></i> Mes informations</a>
+                    <a href="#commandes"><i class="fas fa-box-open"></i> Mes commandes</a>
+                    <a href="#favoris"><i class="fas fa-heart"></i> Mes favoris <span class="badge">5</span></a>
+                    <a href="#adresses"><i class="fas fa-map-marker-alt"></i> Mes adresses</a>
+                    <a href="#parametres"><i class="fas fa-cog"></i> Paramètres</a>
+                    <a href="#deconnexion"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+                </nav>
+            </div>
+            
+            <div class="account-content">
+                <!-- Onglet Mes informations -->
+                <div id="infos" class="account-tab active">
+                    <h2><i class="fas fa-user"></i> Mes informations</h2>
+                    <form class="account-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Prénom</label>
+                                <input type="text" value="Mohamed" />
+                            </div>
+                            <div class="form-group">
+                                <label>Nom</label>
+                                <input type="text" value="Diallo" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="m.diallo@example.com" />
+                        </div>
+                        <div class="form-group">
+                            <label>Téléphone</label>
+                            <input type="tel" value="+235 XX XX XX XX" />
+                        </div>
+                        <div class="form-group">
+                            <label>Date de naissance</label>
+                            <input type="date" value="1990-05-15" />
+                        </div>
+                        <button type="submit" class="btn-save">Enregistrer les modifications</button>
+                    </form>
+                </div>
+                
+                <!-- Onglet Mes favoris (masqué par défaut) -->
+                <div id="favoris" class="account-tab">
+                    <h2><i class="fas fa-heart"></i> Mes favoris</h2>
+                    <div class="favorites-grid">
+                        <!-- Produit favori 1 -->
+                        <div class="favorite-item">
+                            <div class="product-image">
+                                <img src="images/iphone-15-pro.jpg" alt="iPhone 15 Pro" />
+                                <button class="remove-favorite"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <h3>iPhone 15 Pro 256GB</h3>
+                                <div class="price">850 000 FCFA</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn-add-to-cart">Ajouter au panier</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Produit favori 2 -->
+                        <div class="favorite-item">
+                            <div class="product-image">
+                                <img src="images/macbook-air.jpg" alt="MacBook Air" />
+                                <button class="remove-favorite"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <h3>MacBook Air M2 2023</h3>
+                                <div class="price">1 100 000 FCFA</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn-add-to-cart">Ajouter au panier</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="empty-state" style="display: none;">
+                        <i class="fas fa-heart-broken"></i>
+                        <h3>Votre liste de favoris est vide</h3>
+                        <p>Explorez notre boutique et ajoutez vos produits préférés</p>
+                        <a href="produits.html" class="btn-primary">Voir la boutique</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (identique aux autres pages) ... -->
+    </footer>
+
+    <script>
+        // Gestion des onglets du compte
+        document.querySelectorAll('.account-menu a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const tabId = this.getAttribute('href');
+                
+                // Masquer tous les onglets
+                document.querySelectorAll('.account-tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                
+                // Désactiver tous les liens
+                document.querySelectorAll('.account-menu a').forEach(menuLink => {
+                    menuLink.classList.remove('active');
+                });
+                
+                // Activer l'onglet et le lien correspondants
+                document.querySelector(tabId).classList.add('active');
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

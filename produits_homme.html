@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mode Homme - soukExpress</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header class="sticky">
+        <div class="logo">
+            <span class="logo-icon"><i class="fas fa-shopping-bag"></i></span>
+            <h1>souk<span>Express</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../produits.html">Boutique</a></li>
+                <li><a href="../abonnements.html">Abonnements</a></li>
+                <li><a href="../contact.html" class="btn-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bannière catégorie homme -->
+    <section class="category-hero" style="background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('../images/banner-homme.jpg');">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Mode Homme</h1>
+                <p>Découvrez notre sélection premium pour hommes</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Accueil</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="../produits.html">Boutique</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Homme</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section recherche/filtres -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box" data-aos="fade-up">
+                <input type="text" placeholder="Rechercher un produit homme..." />
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="vetements">Vêtements</button>
+                <button class="filter-btn" data-filter="chaussures">Chaussures</button>
+                <button class="filter-btn" data-filter="accessoires">Accessoires</button>
+                <button class="filter-btn" data-filter="montres">Montres</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section produits -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Collection Homme</h2>
+                <div class="sort-options">
+                    <span>Trier par :</span>
+                    <select>
+                        <option>Pertinence</option>
+                        <option>Prix (croissant)</option>
+                        <option>Prix (décroissant)</option>
+                        <option>Nouveautés</option>
+                        <option>Meilleures ventes</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <div class="product-card" data-category="vetements" data-aos="fade-up">
+                    <div class="product-badge new">Nouveau</div>
+                    <div class="product-image">
+                        <img src="../images/chemise-homme.jpg" alt="Chemise homme" />
+                        <div class="quick-view"><i class="fas fa-eye"></i> Voir détails</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chemise Slim Fit</h3>
+                        <div class="product-meta">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.7 (28 avis)
+                            </span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">25 000 FCFA</span>
+                            <span class="original-price">30 000 FCFA</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Ajouter</a>
+                            <a href="#" class="btn-wishlist"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="product-card" data-category="chaussures" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge discount">-20%</div>
+                    <div class="product-image">
+                        <img src="../images/chaussures-homme.jpg" alt="Chaussures homme" />
+                        <div class="quick-view"><i class="fas fa-eye"></i> Voir détails</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chaussures Cuir Premium</h3>
+                        <div class="product-meta">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.9 (42 avis)
+                            </span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">45 000 FCFA</span>
+                            <span class="original-price">56 000 FCFA</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Ajouter</a>
+                            <a href="#" class="btn-wishlist"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="product-card" data-category="accessoires" data-aos="fade-up" data-aos-delay="200">
+                    <!--<div class="product-badge bestseller">Best-seller</div>-->
+                    <div class="product-image">
+                        <img src="../images/montre-homme.jpg" alt="Montre homme" />
+                        <div class="quick-view"><i class="fas fa-eye"></i> Voir détails</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Montre Élégante</h3>
+                        <div class="product-meta">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.8 (65 avis)
+                            </span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">35 000 FCFA</span>
+                            <span class="original-price">50 000 FCFA</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Ajouter</a>
+                            <a href="#" class="btn-wishlist"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div class="product-card" data-category="vetements" data-aos="fade-up">
+                    <div class="product-image">
+                        <img src="../images/jean-homme.jpg" alt="Jean homme" />
+                        <div class="quick-view"><i class="fas fa-eye"></i> Voir détails</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jean Slim Noir</h3>
+                        <div class="product-meta">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.6 (38 avis)
+                            </span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">22 000 FCFA</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Ajouter</a>
+                            <a href="#" class="btn-wishlist"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 5 -->
+                <div class="product-card" data-category="chaussures" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge new">Nouveau</div>
+                    <div class="product-image">
+                        <img src="../images/basket-homme.jpg" alt="Baskets homme" />
+                        <div class="quick-view"><i class="fas fa-eye"></i> Voir détails</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Baskets Sport</h3>
+                        <div class="product-meta">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.7 (24 avis)
+                            </span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">38 000 FCFA</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Ajouter</a>
+                            <a href="#" class="btn-wishlist"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 6 -->
+                <div class="product-card" data-category="accessoires" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="../images/ceinture-homme.jpg" alt="Ceinture homme" />
+                        <div class="quick-view"><i class="fas fa-eye"></i> Voir détails</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ceinture Cuir</h3>
+                        <div class="product-meta">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.5 (19 avis)
+                            </span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">15 000 FCFA</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Ajouter</a>
+                            <a href="#" class="btn-wishlist"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box" data-aos="fade-up">
+                <div class="newsletter-content">
+                    <h2>Abonnez-vous à notre newsletter</h2>
+                    <p>Recevez 10% de réduction sur votre première commande et soyez informé des nouveautés</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Votre email" required />
+                        <button type="submit">S'abonner <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>soukExpress</h3>
+                <p>Votre passerelle d'achats internationaux depuis le Tchad.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Catégories Homme</h3>
+                <ul>
+                    <li><a href="#">Vêtements</a></li>
+                    <li><a href="#">Chaussures</a></li>
+                    <li><a href="#">Accessoires</a></li>
+                    <li><a href="#">Montres</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Service Client</h3>
+                <ul>
+                    <li><a href="#">Contactez-nous</a></li>
+                    <li><a href="#">Livraison & Retours</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guide des tailles</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> N'Djamena, Tchad</p>
+                <p><i class="fas fa-phone"></i> +235 XX XX XX XX</p>
+                <p><i class="fas fa-envelope"></i> contact@soukexpress.td</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 soukExpress. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+</body>
+</html>

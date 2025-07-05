@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique - soukExpress</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Barre de navigation -->
+<header class="sticky">
+    <div class="logo">
+        <span class="logo-icon"><i class="fas fa-shopping-bag"></i></span>
+        <h1>souk<span>Express</span></h1>
+    </div>
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
+                <li><a href="produits.html"><i class="fas fa-store"></i> <span>Boutique</span></a></li>
+                <li><a href="abonnements.html"><i class="fas fa-star"></i> <span>Abonnements</span></a></li>
+                <li><a href="mon-compte.html" class="account-icon"><i class="fas fa-user-circle"></i></a></li>
+                <li><a href="contact.html" class="btn-contact"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            
+            <!-- Menu mobile amélioré -->
+            <div class="mobile-bottom-nav">
+                <a href="index.html" class="mobile-nav-item active">
+                    <div class="mobile-nav-icon"><i class="fas fa-home"></i></div>
+                    <span class="mobile-nav-text">Accueil</span>
+                </a>
+                <a href="produits.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-store"></i></div>
+                    <span class="mobile-nav-text">Boutique</span>
+                </a>
+                <a href="abonnements.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-star"></i></div>
+                    <span class="mobile-nav-text">Abonnements</span>
+                </a>
+                <a href="mon-compte.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-user-circle"></i></div>
+                    <span class="mobile-nav-text">Compte</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-envelope"></i></div>
+                    <span class="mobile-nav-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Bannière produit phare -->
+    <section class="featured-product-banner">
+        <div class="container">
+            <div class="featured-content" data-aos="fade-right">
+                <span class="badge">PRODUIT PHARE</span>
+                <h2>iPhone 15 Pro Max 256GB</h2>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Livraison express 5 jours</li>
+                    <li><i class="fas fa-check"></i> Garantie 1 an incluse</li>
+                    <li><i class="fas fa-check"></i> Paiement sécurisé</li>
+                </ul>
+                <div class="price-container">
+                    <div class="price">950 000 FCFA</div>
+                    <div class="old-price">1 200 000 FCFA</div>
+                </div>
+                <div class="featured-image" data-aos="fade-left">
+                    <img src="images/iphone-15-pro.png" alt="iPhone 15 Pro Max" />
+                    <div class="discount-badge">-21%</div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#custom-order" class="btn-primary">Commander maintenant</a>
+                    <a href="#categories" class="btn-secondary">Explorer les catégories</a>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    
+    <!-- Section catégories mode -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Nos Catégories Mode</h2>
+            <p class="section-subtitle">Découvrez nos sélections spéciales</p>
+            
+            <div class="categories-grid">
+                <!-- Catégorie Homme -->
+                <div class="category-card homme" data-aos="fade-up">
+                    <div class="category-image">
+                        <img src="images/category-homme.jpg" alt="Mode Homme" />
+                        <div class="category-overlay">
+                            <h3>Mode Homme</h3>
+                            <a href="produits_homme.html" class="btn-category">Voir la collection <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-tags">
+                        <span>Chemises</span>
+                        <span>Chaussures</span>
+                        <span>Accessoires</span>
+                    </div>
+                </div>
+                
+                <!-- Catégorie Femme -->
+                <div class="category-card femme" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-image">
+                        <img src="images/category-femme.jpg" alt="Mode Femme" />
+                        <div class="category-overlay">
+                            <h3>Mode Femme</h3>
+                            <a href="produits_femme.html" class="btn-category">Voir la collection <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-tags">
+                        <span>Robes</span>
+                        <span>Sacs</span>
+                        <span>Bijoux</span>
+                    </div>
+                </div>
+                
+                <!-- Catégorie Enfants -->
+                <div class="category-card enfants" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-image">
+                        <img src="images/category-enfants.jpg" alt="Mode Enfants" />
+                        <div class="category-overlay">
+                            <h3>Mode Enfants</h3>
+                            <a href="produits_enfants.html" class="btn-category">Voir la collection <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-tags">
+                        <span>Vêtements</span>
+                        <span>Jouets</span>
+                        <span>Accessoires</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section commande personnalisée -->
+    <section class="custom-order-section" id="custom-order">
+        <div class="container">
+            <div class="order-container" data-aos="fade-up">
+                <div class="order-header">
+                    <h2><i class="fas fa-link"></i> Commandez avec un lien</h2>
+                    <p>Collez le lien du produit depuis Amazon, AliExpress ou autre</p>
+                </div>
+                <form class="order-form">
+                    <div class="form-group">
+                        <div class="input-with-icon">
+                            <i class="fas fa-globe"></i>
+                            <input type="url" placeholder="https://www.amazon.com/produit..." required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-with-icon">
+                            <i class="fas fa-edit"></i>
+                            <textarea placeholder="Notes supplémentaires (couleur, taille, etc.)"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Envoyer la demande
+                    </button>
+                </form>
+                <div class="platforms">
+                    <p>Nous commandons sur :</p>
+                    <div class="platform-logos">
+                        <img src="images/amazon-logo.png" alt="Amazon" />
+                        <img src="images/aliexpress-logo.png" alt="AliExpress" />
+                        <img src="images/shein-logo.png" alt="Shein" />
+                        <img src="images/ebay-logo.png" alt="eBay" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Section avantages -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Livraison Express</h3>
+                    <p>Recevez vos produits en 5-7 jours ouvrés</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Paiement Sécurisé</h3>
+                    <p>Mobile Money ou cash à la livraison</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-headset"></i>
+                    <h3>Support 24/7</h3>
+                    <p>Assistance WhatsApp instantanée</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>soukExpress</h3>
+                <p>Votre passerelle d'achats internationaux depuis le Tchad.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Catégories</h3>
+                <ul>
+                    <li><a href="#homme">Mode Homme</a></li>
+                    <li><a href="#femme">Mode Femme</a></li>
+                    <li><a href="#enfants">Mode Enfants</a></li>
+                    <li><a href="#">High-Tech</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> N'Djamena, Tchad</p>
+                <p><i class="fas fa-phone"></i> +235 XX XX XX XX</p>
+                <p><i class="fas fa-envelope"></i> contact@soukexpress.td</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 soukExpress. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+</body>
+</html>

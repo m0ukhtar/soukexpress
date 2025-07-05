@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abonnements - soukExpress</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+<header class="sticky">
+    <div class="logo">
+        <span class="logo-icon"><i class="fas fa-shopping-bag"></i></span>
+        <h1>souk<span>Express</span></h1>
+    </div>
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
+                <li><a href="produits.html"><i class="fas fa-store"></i> <span>Boutique</span></a></li>
+                <li><a href="abonnements.html"><i class="fas fa-star"></i> <span>Abonnements</span></a></li>
+                <li><a href="mon-compte.html" class="account-icon"><i class="fas fa-user-circle"></i></a></li>
+                <li><a href="contact.html" class="btn-contact"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            
+            <!-- Menu mobile amélioré -->
+            <div class="mobile-bottom-nav">
+                <a href="index.html" class="mobile-nav-item active">
+                    <div class="mobile-nav-icon"><i class="fas fa-home"></i></div>
+                    <span class="mobile-nav-text">Accueil</span>
+                </a>
+                <a href="produits.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-store"></i></div>
+                    <span class="mobile-nav-text">Boutique</span>
+                </a>
+                <a href="abonnements.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-star"></i></div>
+                    <span class="mobile-nav-text">Abonnements</span>
+                </a>
+                <a href="mon-compte.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-user-circle"></i></div>
+                    <span class="mobile-nav-text">Compte</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-item">
+                    <div class="mobile-nav-icon"><i class="fas fa-envelope"></i></div>
+                    <span class="mobile-nav-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Bannière hero -->
+    <section
+      class="page-hero"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 51, 102, 0.8),
+            rgba(0, 51, 102, 0.8)
+          ),
+          url('images/subscriptions-bg.jpg');
+      "
+    >
+      <div class="hero-content">
+        <h1 data-aos="fade-up">Abonnements Internationaux</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Activez Netflix, Spotify et plus en payant en FCFA
+        </p>
+      </div>
+    </section>
+
+    <!-- Section abonnements -->
+    <section class="subscriptions-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Nos Offres Populaires</h2>
+          <div class="subscription-tabs">
+            <button class="tab-btn active" data-tab="streaming">
+              Streaming
+            </button>
+            <button class="tab-btn" data-tab="musique">Musique</button>
+            <button class="tab-btn" data-tab="gaming">Gaming</button>
+            <button class="tab-btn" data-tab="logiciels">Logiciels</button>
+          </div>
+        </div>
+
+        <div class="subscriptions-grid">
+          <!-- Abonnement 1 -->
+          <div
+            class="subscription-card"
+            data-category="streaming"
+            data-aos="fade-up"
+          >
+            <div class="subscription-badge">Le plus populaire</div>
+            <div class="subscription-logo">
+              <img src="images/netflix-logo.png" alt="Netflix" />
+            </div>
+            <h3>Netflix Premium</h3>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> 4 écrans simultanés</li>
+              <li><i class="fas fa-check"></i> Ultra HD disponible</li>
+              <li><i class="fas fa-check"></i> Tous les contenus</li>
+            </ul>
+            <div class="price-box">
+              <span class="price">9 500 FCFA</span>
+              <span class="period">/mois</span>
+            </div>
+            <a href="#" class="btn-subscribe"
+              >S'abonner <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Abonnement 2 -->
+          <div
+            class="subscription-card"
+            data-category="musique"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="subscription-logo">
+              <img src="images/spotify-logo.png" alt="Spotify" />
+            </div>
+            <h3>Spotify Premium</h3>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> Musique sans pubs</li>
+              <li><i class="fas fa-check"></i> Téléchargement offline</li>
+              <li><i class="fas fa-check"></i> Qualité haute définition</li>
+            </ul>
+            <div class="price-box">
+              <span class="price">6 000 FCFA</span>
+              <span class="period">/mois</span>
+            </div>
+            <a href="#" class="btn-subscribe"
+              >S'abonner <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Abonnement 3 -->
+          <div
+            class="subscription-card"
+            data-category="gaming"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="subscription-badge">Économisez 20%</div>
+            <div class="subscription-logo">
+              <img src="images/xbox-logo.png" alt="Xbox Game Pass" />
+            </div>
+            <h3>Xbox Game Pass</h3>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> 100+ jeux premium</li>
+              <li><i class="fas fa-check"></i> Jeux day one</li>
+              <li><i class="fas fa-check"></i> Compatible PC & Xbox</li>
+            </ul>
+            <div class="price-box">
+              <span class="price">8 000 FCFA</span>
+              <span class="period">/mois</span>
+            </div>
+            <a href="#" class="btn-subscribe"
+              >S'abonner <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Abonnement 4 -->
+          <div
+            class="subscription-card"
+            data-category="streaming"
+            data-aos="fade-up"
+          >
+            <div class="subscription-logo">
+              <img src="images/disney-logo.png" alt="Disney+" />
+            </div>
+            <h3>Disney+ Premium</h3>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> Films Marvel & Star Wars</li>
+              <li><i class="fas fa-check"></i> 4 écrans simultanés</li>
+              <li><i class="fas fa-check"></i> Téléchargements offline</li>
+            </ul>
+            <div class="price-box">
+              <span class="price">7 500 FCFA</span>
+              <span class="period">/mois</span>
+            </div>
+            <a href="#" class="btn-subscribe"
+              >S'abonner <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Abonnement 5 -->
+          <div
+            class="subscription-card"
+            data-category="logiciels"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="subscription-logo">
+              <img src="images/adobe-logo.png" alt="Adobe Creative Cloud" />
+            </div>
+            <h3>Adobe Creative Cloud</h3>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> Photoshop + Premiere Pro</li>
+              <li><i class="fas fa-check"></i> 100GB de stockage</li>
+              <li><i class="fas fa-check"></i> Mises à jour incluses</li>
+            </ul>
+            <div class="price-box">
+              <span class="price">15 000 FCFA</span>
+              <span class="period">/mois</span>
+            </div>
+            <a href="#" class="btn-subscribe"
+              >S'abonner <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Abonnement 6 -->
+          <div
+            class="subscription-card"
+            data-category="musique"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="subscription-logo">
+              <img src="images/apple-music-logo.png" alt="Apple Music" />
+            </div>
+            <h3>Apple Music</h3>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> 75 millions de titres</li>
+              <li><i class="fas fa-check"></i> Sans publicité</li>
+              <li><i class="fas fa-check"></i> Spatial Audio</li>
+            </ul>
+            <div class="price-box">
+              <span class="price">6 500 FCFA</span>
+              <span class="period">/mois</span>
+            </div>
+            <a href="#" class="btn-subscribe"
+              >S'abonner <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Questions Fréquentes</h2>
+        <div class="faq-grid">
+          <div class="faq-item" data-aos="fade-up">
+            <div class="faq-question">
+              <h3>Comment activer mon abonnement ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Après paiement, nous vous envoyons les identifiants sous 24h
+                maximum par email et WhatsApp.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-question">
+              <h3>Puis-je payer en plusieurs fois ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Oui, nous proposons des paiements trimestriels avec une
+                réduction de 10%.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question">
+              <h3>Que faire en cas de problème ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Notre support WhatsApp est disponible 24/7 pour vous aider
+                immédiatement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Même footer que la page d'accueil -->
+    </footer>
+
+    <!-- Scripts -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+
+      // FAQ toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector("i");
+
+          answer.classList.toggle("active");
+          icon.classList.toggle("fa-chevron-down");
+          icon.classList.toggle("fa-chevron-up");
+        });
+      });
+    </script>
+  </body>
+</html>
